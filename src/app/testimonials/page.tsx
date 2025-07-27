@@ -1,4 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import Link from "next/link";
 
 export default function Testimonials() {
   return (
@@ -7,12 +8,12 @@ export default function Testimonials() {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="text-2xl font-bold text-blue-600">Putratour</div>
           <nav className="hidden md:flex space-x-8">
-            <a href="/" className="text-gray-600 hover:text-blue-600">Home</a>
-            <a href="/paket-wisata" className="text-gray-600 hover:text-blue-600">Paket Wisata</a>
-            <a href="/gallery" className="text-gray-600 hover:text-blue-600">Gallery</a>
-            <a href="/testimonials" className="text-blue-600 font-bold">Testimonials</a>
-            <a href="/outfit" className="text-gray-600 hover:text-blue-600">Outfit</a>
-            <a href="/hubungi-kami" className="text-gray-600 hover:text-blue-600">Hubungi Kami</a>
+            <Link href="/" className="text-gray-600 hover:text-blue-600">Home</Link>
+            <Link href="/paket-wisata" className="text-gray-600 hover:text-blue-600">Paket Wisata</Link>
+            <Link href="/gallery" className="text-gray-600 hover:text-blue-600">Gallery</Link>
+            <Link href="/testimonials" className="text-blue-600 font-bold">Testimonials</Link>
+            <Link href="/outfit" className="text-gray-600 hover:text-blue-600">Outfit</Link>
+            <Link href="/hubungi-kami" className="text-gray-600 hover:text-blue-600">Hubungi Kami</Link>
           </nav>
         </div>
       </header>
@@ -29,7 +30,7 @@ export default function Testimonials() {
               <CardTitle>Alex</CardTitle>
             </CardHeader>
             <CardContent>
-              <p>"Pengalaman yang luar biasa! Pemandangannya menakjubkan."</p>
+              <p>Pengalaman yang luar biasa! Pemandangannya menakjubkan.</p>
             </CardContent>
           </Card>
           <Card>
@@ -37,7 +38,7 @@ export default function Testimonials() {
               <CardTitle>Sarah</CardTitle>
             </CardHeader>
             <CardContent>
-              <p>"Tur yang terorganisir dengan baik. Pemandunya sangat berpengetahuan."</p>
+              <p>Tur yang terorganisir dengan baik. Pemandunya sangat berpengetahuan.</p>
             </CardContent>
           </Card>
         </section>

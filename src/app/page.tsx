@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 import { HomeIcon, Package, Image as ImageIcon, Star, Shirt, Phone, ChevronRight } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -10,12 +11,12 @@ export default function Home() {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="text-2xl font-bold text-blue-600">Putratour</div>
           <nav className="hidden md:flex space-x-8 items-center">
-            <a href="/" className="flex items-center text-blue-600 font-bold"><HomeIcon className="w-4 h-4 mr-2" />Home</a>
-            <a href="/paket-wisata" className="flex items-center text-gray-600 hover:text-blue-600"><Package className="w-4 h-4 mr-2" />Paket Wisata</a>
-            <a href="/gallery" className="flex items-center text-gray-600 hover:text-blue-600"><ImageIcon className="w-4 h-4 mr-2" />Gallery</a>
-            <a href="/testimonials" className="flex items-center text-gray-600 hover:text-blue-600"><Star className="w-4 h-4 mr-2" />Testimonials</a>
-            <a href="/outfit" className="flex items-center text-gray-600 hover:text-blue-600"><Shirt className="w-4 h-4 mr-2" />Outfit</a>
-            <a href="/hubungi-kami" className="flex items-center text-gray-600 hover:text-blue-600"><Phone className="w-4 h-4 mr-2" />Hubungi Kami</a>
+            <Link href="/" className="flex items-center text-blue-600 font-bold"><HomeIcon className="w-4 h-4 mr-2" />Home</Link>
+            <Link href="/paket-wisata" className="flex items-center text-gray-600 hover:text-blue-600"><Package className="w-4 h-4 mr-2" />Paket Wisata</Link>
+            <Link href="/gallery" className="flex items-center text-gray-600 hover:text-blue-600"><ImageIcon className="w-4 h-4 mr-2" />Gallery</Link>
+            <Link href="/testimonials" className="flex items-center text-gray-600 hover:text-blue-600"><Star className="w-4 h-4 mr-2" />Testimonials</Link>
+            <Link href="/outfit" className="flex items-center text-gray-600 hover:text-blue-600"><Shirt className="w-4 h-4 mr-2" />Outfit</Link>
+            <Link href="/hubungi-kami" className="flex items-center text-gray-600 hover:text-blue-600"><Phone className="w-4 h-4 mr-2" />Hubungi Kami</Link>
           </nav>
         </div>
       </header>

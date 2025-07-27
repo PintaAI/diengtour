@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function PaketWisata() {
   return (
@@ -9,12 +10,12 @@ export default function PaketWisata() {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="text-2xl font-bold text-blue-600">Putratour</div>
           <nav className="hidden md:flex space-x-8">
-            <a href="/" className="text-gray-600 hover:text-blue-600">Home</a>
-            <a href="/paket-wisata" className="text-blue-600 font-bold">Paket Wisata</a>
-            <a href="/gallery" className="text-gray-600 hover:text-blue-600">Gallery</a>
-            <a href="/testimonials" className="text-gray-600 hover:text-blue-600">Testimonials</a>
-            <a href="/outfit" className="text-gray-600 hover:text-blue-600">Outfit</a>
-            <a href="/hubungi-kami" className="text-gray-600 hover:text-blue-600">Hubungi Kami</a>
+            <Link href="/" className="text-gray-600 hover:text-blue-600">Home</Link>
+            <Link href="/paket-wisata" className="text-blue-600 font-bold">Paket Wisata</Link>
+            <Link href="/gallery" className="text-gray-600 hover:text-blue-600">Gallery</Link>
+            <Link href="/testimonials" className="text-gray-600 hover:text-blue-600">Testimonials</Link>
+            <Link href="/outfit" className="text-gray-600 hover:text-blue-600">Outfit</Link>
+            <Link href="/hubungi-kami" className="text-gray-600 hover:text-blue-600">Hubungi Kami</Link>
           </nav>
         </div>
       </header>
