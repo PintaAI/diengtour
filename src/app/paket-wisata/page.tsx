@@ -1,29 +1,28 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
-import { HomeIcon, Package, Image as ImageIcon, Star, Shirt, Phone, ChevronRight } from "lucide-react";
 
-export default function Home() {
+export default function PaketWisata() {
   return (
     <div className="bg-gray-50">
       <header className="bg-white shadow-sm">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="text-2xl font-bold text-blue-600">Putratour</div>
-          <nav className="hidden md:flex space-x-8 items-center">
-            <a href="/" className="flex items-center text-blue-600 font-bold"><HomeIcon className="w-4 h-4 mr-2" />Home</a>
-            <a href="/paket-wisata" className="flex items-center text-gray-600 hover:text-blue-600"><Package className="w-4 h-4 mr-2" />Paket Wisata</a>
-            <a href="/gallery" className="flex items-center text-gray-600 hover:text-blue-600"><ImageIcon className="w-4 h-4 mr-2" />Gallery</a>
-            <a href="/testimonials" className="flex items-center text-gray-600 hover:text-blue-600"><Star className="w-4 h-4 mr-2" />Testimonials</a>
-            <a href="/outfit" className="flex items-center text-gray-600 hover:text-blue-600"><Shirt className="w-4 h-4 mr-2" />Outfit</a>
-            <a href="/hubungi-kami" className="flex items-center text-gray-600 hover:text-blue-600"><Phone className="w-4 h-4 mr-2" />Hubungi Kami</a>
+          <nav className="hidden md:flex space-x-8">
+            <a href="/" className="text-gray-600 hover:text-blue-600">Home</a>
+            <a href="/paket-wisata" className="text-blue-600 font-bold">Paket Wisata</a>
+            <a href="/gallery" className="text-gray-600 hover:text-blue-600">Gallery</a>
+            <a href="/testimonials" className="text-gray-600 hover:text-blue-600">Testimonials</a>
+            <a href="/outfit" className="text-gray-600 hover:text-blue-600">Outfit</a>
+            <a href="/hubungi-kami" className="text-gray-600 hover:text-blue-600">Hubungi Kami</a>
           </nav>
         </div>
       </header>
 
       <main className="container mx-auto px-4 py-12">
         <section className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-800">Paket Dieng Sesuai Liburmu</h1>
-          <p className="text-gray-500 mt-2">Trip privat, fleksibel & bisa request destinasi</p>
+          <h1 className="text-4xl font-bold text-gray-800">Paket Wisata Dieng</h1>
+          <p className="text-gray-500 mt-2">Pilih paket yang sesuai dengan kebutuhan Anda.</p>
         </section>
 
         <section className="grid md:grid-cols-3 gap-8">
@@ -37,7 +36,7 @@ export default function Home() {
               <p className="text-gray-800 font-bold mt-4">Harga mulai Rp275.000/orang</p>
             </CardContent>
             <CardFooter className="p-6">
-              <Button className="w-full bg-blue-600 hover:bg-blue-700">Detail Paket Wisata <ChevronRight className="w-4 h-4 ml-2" /></Button>
+              <Button className="w-full bg-blue-600 hover:bg-blue-700">Detail Paket Wisata</Button>
             </CardFooter>
           </Card>
 
@@ -51,7 +50,7 @@ export default function Home() {
               <p className="text-gray-800 font-bold mt-4">Harga mulai Rp750.000/orang</p>
             </CardContent>
             <CardFooter className="p-6">
-              <Button className="w-full bg-blue-600 hover:bg-blue-700">Detail Paket Wisata <ChevronRight className="w-4 h-4 ml-2" /></Button>
+              <Button className="w-full bg-blue-600 hover:bg-blue-700">Detail Paket Wisata</Button>
             </CardFooter>
           </Card>
 
@@ -65,7 +64,7 @@ export default function Home() {
               <p className="text-gray-800 font-bold mt-4">Harga mulai Rp975.000/orang</p>
             </CardContent>
             <CardFooter className="p-6">
-              <Button className="w-full bg-blue-600 hover:bg-blue-700">Detail Paket Wisata <ChevronRight className="w-4 h-4 ml-2" /></Button>
+              <Button className="w-full bg-blue-600 hover:bg-blue-700">Detail Paket Wisata</Button>
             </CardFooter>
           </Card>
         </section>
